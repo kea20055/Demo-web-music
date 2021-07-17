@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'poppins', sans-serif;
+}
+.title{
+	font-weight: 400;
+	text-shadow: 3px 3px 4px #666666;
+}
+.contenedor{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	text-align: center;
+	padding: 20px;
+}
+.music-1{
+	background: #dedede;
+	padding: 20px 30px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	line-height: 50px;
+}
+.image{
+	width: 70%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px #000;
+
+}
+.giro{
+	animation-name: animacion;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes animacion{
+	0%{
+		transform: rotate(0);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+audio{
+	outline: none;
+	background: #fff;
+}
+audio::controls{
+	color: #fff;
+}
